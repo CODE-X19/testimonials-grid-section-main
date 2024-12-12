@@ -1,0 +1,202 @@
+:root{
+    --violent:hsl(263, 55%, 52%);
+    --grayish-blue:hsl(217, 19%, 35%);
+    --blackish-blue:hsl(219, 29%, 14%);
+    --White:hsl(0, 0%, 100%);
+    --Light-gray:hsl(0, 0%, 81%);
+    --grayish-blue: hsl(210, 46%, 95%);
+
+    --fs: 13px;
+    --fwb:600;
+    --fwm:500;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--grayish-blue);
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: var(--fs);
+    display: grid;
+    place-content: center;
+    height: 100vh;
+   
+}
+h2{
+    font-size: 22px;
+    font-weight: 500;
+    
+}
+p{
+    font-size: 13px;
+    font-weight: 100;
+    line-height: 20px;
+    
+}
+
+.container{
+   
+ 
+  /*  */
+  display: grid;
+  align-content: center;
+}
+.card{
+border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+   
+}
+.c1{
+    background-color: var(--violent);
+    color: var(--White);
+    position: relative;
+    
+}
+.c2{
+    background-color: hsl(217, 19%, 35%);
+    color: var(--White);
+   
+}
+.c3{
+    background-color: var(--White);
+    color: var(--blackish-blue);
+    
+}
+.c3 .user{
+    color: hsl(217, 19%, 35%);
+}
+.c4{
+    background-color: var(--blackish-blue);
+    color: var(--White);
+   
+}
+.c5{
+    background-color: var(--White);
+    color: var(--blackish-blue);
+    
+}
+.c5 .user{
+    color: hsl(217, 19%, 35%);
+}
+
+.image{
+    border-radius: 50%;
+    width: 35px;
+    border:3px var(--grayish-blue) solid;
+
+}
+.user{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    color: var(--White);
+    font-weight: 100;
+
+}
+.user p{
+    color: var(--Light-gray);
+}
+.c3 .user p{
+    color: hsl(217, 19%, 35%);
+}
+.c3  h2{
+    color: hsl(217, 19%, 35%);
+}
+.c3  p{
+    color: hsl(217, 19%, 35%);
+}
+.c5  h2{
+    color: hsl(217, 19%, 35%);
+}
+.c5  p{
+    color: hsl(217, 19%, 35%);
+}
+.c5 .user p{
+    color: hsl(217, 19%, 35%);
+}
+.user h3{
+    font-weight: 400;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.quote{
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+.cards{
+    width: min(95%, 70rem);
+    margin-inline: auto;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 300px);
+
+    grid-template-areas: 
+    "   daniel     daniel       walter     kira     "
+    "   harmon     abram       abram       kira     ";
+    
+}
+
+.c1{
+    
+    grid-area: daniel;
+}
+
+.c2{
+    
+    grid-area: walter;
+}
+
+.c3{
+    
+    grid-area: harmon;
+}
+
+.c4{
+    
+    grid-area: abram;
+}
+
+.c5{
+    
+    grid-area: kira;
+}
+.testimonial.quote {
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+  }
+/* .all{
+    position: relative;
+    top: -40px;
+} */
+
+@media screen and (max-width: 375px) {
+
+    body{
+        
+        display: block;
+        margin: 1em;
+        
+       
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+       justify-items: center;
+    }
+}
+
+
+
